@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Assignment1</string>
+    <string name="roll">Lăn!</string>
+    <string name="textview">TextView</string>
+    <string name="add">Cộng</string>
+    <string name="sub">Trừ</string>
+    <string name="reset">Mới</string>
+</resources>

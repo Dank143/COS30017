@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <Button
+        android:id="@+id/saveButton"
+        style="@style/ButtonStyle"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="306dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/borrowDaysText" />
+
+    <ImageView
+        android:id="@+id/detailItemImage"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/item_image"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/detailItemName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/detailItemName"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="8dp"
+        android:text="Item Name"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/detailItemPrice"
+        app:layout_constraintEnd_toEndOf="@+id/detailItemImage"
+        app:layout_constraintTop_toBottomOf="@+id/detailItemImage" />
+
+    <TextView
+        android:id="@+id/detailItemPrice"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Price: $00.00"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/borrowDaysSlider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailItemName" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/borrowDaysSlider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:stepSize="1"
+        android:value="1"
+        android:valueFrom="0"
+        android:valueTo="7"
+        app:layout_constraintBottom_toTopOf="@+id/borrowDaysText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailItemPrice" />
+
+    <TextView
+        android:id="@+id/borrowDaysText"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/borrow_for_1_day"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/saveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/borrowDaysSlider" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

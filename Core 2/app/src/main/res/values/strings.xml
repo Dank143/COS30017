@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Core2alpha0</string>
+    <string name="item_name">Item Name</string>
+    <string name="price_0_0">Price: $0.0</string>
+    <string name="next">Next</string>
+    <string name="todo">TODO</string>
+    <string name="save">Save</string>
+    <string name="save_changes" />
+    <string name="item_image" />
+    <string name="borrow_for_1_day">Borrow for: 1 day</string>
+    <string name="textview">TextView</string>
+    <string name="used">Used</string>
+</resources>
