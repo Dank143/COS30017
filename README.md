@@ -1,2 +1,2 @@
 # COS30017
-All assignments and extension assignment
+All assignments and extension assignments
